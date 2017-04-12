@@ -1,14 +1,15 @@
 <resources>
     <string name="app_name">Intergalacticresort</string>
     <string name="company">Intergalactic\nResorts on Mars</string>
-    <string name="studio">Breathtaking Studio apartment with stunning views and endless backyard.\nFar from city noise. An excellent place to retreat.</string>
+    <string name="studio">Breathtaking Studio apartment with stunning views and endless backyard. Far from city noise. An excellent place to retreat. Be among the first people establishing the first colony on Mars.</string>
     <string name="more">More</string>
-    <string name="contact">Contacts</string>
-    <string name="contact1">MATT DAEMON matt.daemon@igmail.com</string>
-    <string name="contact2">ELON MASK elon.mask@igmail.com</string>
+    <string name="contact">Your contacts</string>
+    <string name="contact1">MATT DAEMON janitor, and gardener</string>
+    <string name="contact2">ELON MASK owner/tour operator</string>
     <string name="name">The Martian Habitat</string>
     <string name="fly">Move In Today!</string>
     <string name="about">About Project:</string>
+    <string name="phone">CALL US ON: +1-(358)-223-MARS</string>
 
 
 </resources>

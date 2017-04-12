@@ -19,7 +19,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#6D4C41">
+            android:background="@color/colorDarkerBrown">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -70,7 +70,7 @@
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:gravity="center|left"
+                    android:gravity="center_vertical"
                     android:padding="8dp"
                     android:textAllCaps="true"
                     android:textStyle="bold"
@@ -84,7 +84,7 @@
                     android:layout_height="match_parent"
                     android:paddingRight="30dp"
                     android:paddingLeft="30dp"
-                    android:background="@color/colorDarkBrown"
+                    android:background="@color/colorDarkerBrown"
                     android:minHeight="0dp"
                     android:minWidth="0dp"
                     android:text="@string/more"
@@ -97,8 +97,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:padding="8dp"
-                android:textSize="18sp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:textSize="16sp"
                 android:text="@string/studio"
                 android:textColor="@color/colorTextDark" />
 
@@ -106,7 +109,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="16sp"
-                android:padding="8dp"
+                android:paddingStart="8dp"
                 android:text="@string/contact"
                 android:textAllCaps="true"
                 android:textColor="@color/colorTextDark" />
@@ -114,23 +117,37 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginRight="100dp"
+                android:layout_marginEnd="140dp"
                 android:background="#6D4C41"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="16sp"
-                android:padding="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="4dp"
+                android:textColor="@color/colorTextDark"
                 android:text="@string/contact1"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorDarkBrown"
+                android:textSize="16sp"
+                android:paddingStart="8dp"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:textColor="@color/colorTextDark"
+                android:text="@string/contact2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorDarkerBrown"
                 android:padding="8dp"
-                android:textSize="17sp"
-                android:text="@string/contact2" />
+                android:textSize="16sp"
+                android:gravity="center"
+                android:text="@string/phone" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -146,11 +163,6 @@
 
         </LinearLayout>
 
-
-
-
     </LinearLayout>
-
-
 
 </RelativeLayout>
