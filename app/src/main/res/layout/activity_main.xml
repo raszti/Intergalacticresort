@@ -18,14 +18,14 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorDarkerBrown">
+            android:layout_height="60dp"
+            android:background="@color/colorPrimary">
 
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="40dp"
                 android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:padding="5dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="8dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/ic_language_white_48dp"
                 android:tint="#E0E0E0" />
@@ -38,20 +38,46 @@
                 android:padding="4dp"
                 android:text="@string/company"
                 android:textAllCaps="true"
-                android:textSize="24sp"
-                android:textStyle="bold" />
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorTextLight"/>
         </LinearLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="200dp">
 
-        <ImageView
-            android:id="@+id/picture"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/mars" />
+            <ImageView
+                android:id="@+id/picture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mars" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/left_arrow"
+                android:tint="@android:color/white"
+                android:alpha="0.5"
+                android:layout_centerInParent="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="8dp"
+                />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:scaleX="-1"
+                android:src="@drawable/left_arrow"
+                android:tint="@android:color/white"
+                android:alpha="0.5"
+                android:layout_centerInParent="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="8dp"
+                />
 
         </RelativeLayout>
 
@@ -76,7 +102,7 @@
                     android:textStyle="bold"
                     android:text="@string/name"
                     android:textColor="@color/colorTextDark"
-                    android:textSize="20sp" />
+                    android:textSize="18sp" />
 
                 <Button
                     android:id="@+id/more"
@@ -84,12 +110,13 @@
                     android:layout_height="match_parent"
                     android:paddingRight="30dp"
                     android:paddingLeft="30dp"
-                    android:background="@color/colorDarkerBrown"
+                    android:background="@color/colorPrimaryDark"
                     android:minHeight="0dp"
                     android:minWidth="0dp"
                     android:text="@string/more"
                     android:textAllCaps="true"
-                    android:textSize="20sp" />
+                    android:textSize="18sp"
+                    android:textColor="@color/colorTextLight"/>
 
             </LinearLayout>
 
@@ -143,9 +170,10 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorDarkerBrown"
+                android:background="@color/colorPrimary"
                 android:padding="8dp"
                 android:textSize="16sp"
+                android:textColor="@color/colorTextLight"
                 android:gravity="center"
                 android:text="@string/phone" />
 
@@ -157,7 +185,7 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:background="#ccff8f00"
+                android:background="@color/colorAccent"
                 android:text="@string/fly"
                 android:textSize="20sp" />
 
