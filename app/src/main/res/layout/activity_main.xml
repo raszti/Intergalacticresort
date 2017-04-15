@@ -1,196 +1,182 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_weight="1"
+    android:layout_height="match_parent"
     android:background="#FFF8E1"
     android:orientation="vertical">
 
     <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#FFF8E1"
-    android:orientation="vertical"
-    tools:context="com.example.raszti.intergalacticresort.MainActivity"
-    android:baselineAligned="false">
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@color/colorPrimary">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="12dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_language_white_48dp"
+            android:tint="#E0E0E0" />
 
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="match_parent"
-                android:layout_marginStart="12dp"
-                android:layout_marginEnd="8dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/ic_language_white_48dp"
-                android:tint="#E0E0E0" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif"
+            android:padding="4dp"
+            android:text="@string/company"
+            android:textAllCaps="true"
+            android:textColor="@color/colorTextLight"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:fontFamily="sans-serif"
-                android:padding="4dp"
-                android:text="@string/company"
-                android:textAllCaps="true"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:textColor="@color/colorTextLight"/>
-        </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="200dp">
-
-            <ImageView
-                android:id="@+id/picture"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/mars" />
-
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="wrap_content"
-                android:scaleType="fitCenter"
-                android:src="@drawable/left_arrow"
-                android:tint="@android:color/white"
-                android:alpha="0.5"
-                android:layout_centerInParent="true"
-                android:layout_alignParentStart="true"
-                android:layout_margin="8dp"
-                />
-
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="wrap_content"
-                android:scaleType="fitCenter"
-                android:scaleX="-1"
-                android:src="@drawable/left_arrow"
-                android:tint="@android:color/white"
-                android:alpha="0.5"
-                android:layout_centerInParent="true"
-                android:layout_alignParentEnd="true"
-                android:layout_margin="8dp"
-                />
-
-        </RelativeLayout>
-
-        <LinearLayout
+        <ImageView
+            android:id="@+id/picture"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            >
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="0dp">
+            android:scaleType="centerCrop"
+            android:src="@drawable/mars" />
 
-                <TextView
-                    android:id="@+id/name"
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical"
-                    android:padding="8dp"
-                    android:textAllCaps="true"
-                    android:textStyle="bold"
-                    android:text="@string/name"
-                    android:textColor="@color/colorTextDark"
-                    android:textSize="18sp" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="8dp"
+            android:alpha="0.5"
+            android:scaleType="fitCenter"
+            android:src="@drawable/left_arrow"
+            android:tint="@android:color/white" />
 
-                <Button
-                    android:id="@+id/more"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:paddingRight="30dp"
-                    android:paddingLeft="30dp"
-                    android:background="@color/colorPrimaryDark"
-                    android:minHeight="0dp"
-                    android:minWidth="0dp"
-                    android:text="@string/more"
-                    android:textAllCaps="true"
-                    android:textSize="18sp"
-                    android:textColor="@color/colorTextLight"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="8dp"
+            android:alpha="0.5"
+            android:scaleType="fitCenter"
+            android:scaleX="-1"
+            android:src="@drawable/left_arrow"
+            android:tint="@android:color/white" />
 
-            </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:paddingStart="8dp"
-                android:paddingEnd="8dp"
-                android:paddingTop="4dp"
-                android:paddingBottom="4dp"
-                android:textSize="16sp"
-                android:text="@string/studio"
-                android:textColor="@color/colorTextDark" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="16sp"
-                android:paddingStart="8dp"
-                android:text="@string/contact"
-                android:textAllCaps="true"
-                android:textColor="@color/colorTextDark" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginEnd="140dp"
-                android:background="#6D4C41"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="16sp"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
-                android:paddingTop="4dp"
-                android:textColor="@color/colorTextDark"
-                android:text="@string/contact1"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="16sp"
-                android:paddingStart="8dp"
-                android:paddingBottom="4dp"
-                android:paddingTop="4dp"
-                android:textColor="@color/colorTextDark"
-                android:text="@string/contact2"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorPrimary"
+                android:gravity="center_vertical"
                 android:padding="8dp"
-                android:textSize="16sp"
-                android:textColor="@color/colorTextLight"
-                android:gravity="center"
-                android:text="@string/phone" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#6D4C41"/>
+                android:text="@string/name"
+                android:textAllCaps="true"
+                android:textColor="@color/colorTextDark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:background="@color/colorAccent"
-                android:text="@string/fly"
-                android:textSize="20sp" />
+                android:id="@+id/more"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="@string/more"
+                android:textAllCaps="true"
+                android:textColor="@color/colorTextLight"
+                android:textSize="18sp" />
 
         </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingBottom="4dp"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:text="@string/studio"
+            android:textColor="@color/colorTextDark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:text="@string/contact"
+            android:textAllCaps="true"
+            android:textColor="@color/colorTextDark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginEnd="140dp"
+            android:background="#6D4C41" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="4dp"
+            android:text="@string/contact1"
+            android:textColor="@color/colorTextDark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:text="@string/contact2"
+            android:textColor="@color/colorTextDark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/phone"
+            android:textColor="@color/colorTextLight"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#6D4C41" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorAccent"
+            android:text="@string/fly"
+            android:textSize="20sp" />
 
     </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>
