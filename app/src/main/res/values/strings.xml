@@ -4,8 +4,10 @@
     <string name="studio">Breathtaking Studio apartment with stunning views and endless backyard. Far from city noise. An excellent place to retreat. Be among the first people establishing the first colony on Mars.</string>
     <string name="more">More</string>
     <string name="contact">Your contacts</string>
-    <string name="contact1">MATT DAEMON janitor, and gardener</string>
-    <string name="contact2">ELON MASK owner/tour operator</string>
+    <string name="contact1a">MATT DAEMON</string>
+    <string name="contact1b">janitor, and gardener</string>
+    <string name="contact2a">ELON MASK</string>
+    <string name="contact2b">owner/tour operator</string>
     <string name="name">The Martian Habitat</string>
     <string name="fly">Move In Today!</string>
     <string name="about">About Project:</string>
